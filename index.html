@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QuizMaster App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-container">
+  <h1 style="color: #1581BF">QuizMaster</h1>
+
+  <div id="quiz-box">
+    <h3 id="question"></h3>
+
+    <div id="options">
+      <button class="option"></button>
+      <button class="option"></button>
+      <button class="option"></button>
+      <button class="option"></button>
+    </div>
+
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <div id="result-box" class="hide">
+    <h2>Your Score: <span id="score"></span></h2>
+    <button id="restartBtn">Restart Quiz</button>
+
+    <button onclick="submitQuiz()" id="submit">Submit</button>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

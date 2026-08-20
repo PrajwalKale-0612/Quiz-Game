@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-family: Arial;
+}
+
+.container {
+    margin-top: 150px;
+}
+
+.win {
+    background: linear-gradient(45deg, #00c853, #64dd17);
+    animation: winAnimation 2s infinite alternate;
+}
+
+@keyframes winAnimation {
+    0% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+.loss {
+    background: linear-gradient(45deg, #d50000, #ff1744);
+    animation: lossAnimation 1s infinite alternate;
+}
+
+@keyframes lossAnimation {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); }
+}

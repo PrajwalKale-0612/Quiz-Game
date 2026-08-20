@@ -1,0 +1,164 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-image: url("Login_Page_Image.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login_form_container{
+    position: relative;
+    width: 350px;
+    background: #111;
+    padding: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+
+
+@keyframes slideDown{
+    from{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.login_form h2{
+    color: #d12b7b;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.input_group{
+    display: flex;
+    align-items: center;
+    background: #222;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.input_group i{
+    color: #d6a02c;
+    margin-right: 10px;
+}
+
+.input_text{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+button
+{
+    border: none;
+    background: #A7408B;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 8px;
+
+}
+
+
+
+.button_group a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.footer a{
+    color: #aaa;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    color: #586062;
+}
+
+
+
+
+.login_form_container::before{
+    content: "";
+    position: absolute;
+    inset: -6px;              /* border size वाढवला */
+    border-radius: 22px;
+
+
+    background-image: url("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/coding-competition-design-template-87dba6fa6e8291b8fe5e29abc492288a_screen.jpg?ts=1676540509");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+
+
+.login_form{
+    position: relative;
+    z-index: 2;
+}
+
+/* @keyframes borderMove{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} */
+
+@media (max-width: 480px)
+{
+    
+    .card
+    {
+        width: 95%;
+        margin-right:65vh;
+       
+    }
+
+    .input_group,.button_group
+    {
+        width: 90%;
+
+    }
+
+    .login_form
+    {
+        margin-left: 15px;
+    }
+
+   
+} 
+
